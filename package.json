@@ -11,8 +11,9 @@
     "parcel": "^2.1.1"
   },
   "scripts": {
-    "dev": "parcel src/pages/home/home.pug src/pages/login/index.pug src/pages/profile/profile.pug src/pages/register/register.pug src/pages/500/500.pug src/pages/404/404.pug",
-    "build": "parcel build src/pages/home/home.pug src/pages/login/index.pug src/pages/profile/profile.pug src/pages/register/register.pug src/pages/500/500.pug src/pages/404/404.pug"
+    "dev": "parcel ./static/*.pug",
+    "build": "parcel build ./static/*.pug",
+    "start": "node ./server.js"
   },
   "author": "",
   "license": "ISC",

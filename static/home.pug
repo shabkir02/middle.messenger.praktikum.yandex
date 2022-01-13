@@ -1,10 +1,11 @@
-extends ../../layout/main/main.pug
+extends ../src/layout/main/main.pug
 
 block content
   .home
     aside.home__dialogs
       .home__dialogs-header
-        button.button.button_small Настройки профиля
+        a(href="./profile.pug")
+          button.button.button_small Настройки профиля
       ul.home__dialogs-wrapper
         li.home__dialogs-item
           .home__dialogs-img-wrapper

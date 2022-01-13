@@ -1,5 +1,4 @@
-
-extends ../../layout/main/main.pug
+extends ../src/layout/main/main.pug
 
 block content 
   div.login
@@ -11,8 +10,8 @@ block content
         button.button Войти 
       div.form__descr
         span Вы новый пользователь? 
-        a(href="#").form__link Зарегестрироваться
-      div.form__descr
-        span Забыли пароль? 
-        a(href="#").form__link Восстановить пароль
+        a(href="./register.pug").form__link Зарегестрироваться
+      //- div.form__descr
+      //-   span Забыли пароль? 
+      //-   a(href="#").form__link Восстановить пароль
     
