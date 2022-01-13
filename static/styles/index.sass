@@ -1,0 +1,96 @@
+@import './bootstrap-reboot.min.css'
+
+$color_blue: #3369F3
+$color_gray: #ececec
+$color_dark_gray: #6F6F6F
+$dialogs_header_height: 80px
+$border: 1px solid $color_gray
+
+body 
+  background-color: $color_gray
+  font-family: 'Roboto', sans-serif
+
+input, button
+  border: none
+  outline: none
+
+ul, p, h1, h2, h3, h4
+  padding: 0
+  margin: 0
+  font-weight: 400
+
+li 
+  list-style-type: none
+
+.hidden
+  display: none
+
+@import '/src/pages/login/login.sass'
+@import '/src/pages/home/home.sass'
+@import '/src/pages/register/register.sass'
+@import '/src/pages/profile/profile.sass'
+
+.img-inner
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.error
+  widows: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  &__title
+    font-size: 16px
+  &__code
+    font-size: 24px
+  
+.form
+  max-width: 480px
+  &__profile-img-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    width: 100px
+    height: 100px
+    background: #fff
+    border-radius: 100%
+    overflow: hidden
+    margin-bottom: 22px
+  &__profile-img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__fieldset
+    display: flex
+    gap: 10px
+  &__title
+    font-size: 24px
+    text-align: center
+    font-weight: 500
+    margin-bottom: 24px
+  &__input
+    padding: 22px 30px
+    width: 100%
+    border-radius: 40px
+    margin-bottom: 24px
+  &__descr
+    text-align: center
+    margin-bottom: 15px
+  &__link
+    color: $color_blue
+
+.button
+  padding: 18px 40px
+  border-radius: 40px
+  background: $color_blue
+  color: #fff
+  display: block
+  margin: 0 auto 40px
+  &_small
+    padding: 8px 16px
+    font-size: 12px
+    margin: 0

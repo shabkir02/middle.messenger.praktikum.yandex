@@ -1,0 +1,21 @@
+
+extends ../../layout/main/main.pug
+
+block content 
+  div.register
+    div.form
+      h2.form__title Регистрация 
+      form
+        fieldset.form__fieldset
+          input(name="first_name", placeholder="Имя", type="text").form__input
+          input(name="second_name", placeholder="Фамилия", type="text").form__input
+        fieldset.form__fieldset
+          input(name="login", placeholder="Логин", type="text").form__input
+          input(name="email", placeholder="Email", type="email").form__input
+        input(name="password", placeholder="Пароль", type="password").form__input
+        input(name="phone", placeholder="Номер телефона", type="text").form__input
+        button.button Зарегистрироваться
+      div.form__descr
+        span Уже зарегистрированы? 
+        a(href="#").form__link Войти
+    
