@@ -1,0 +1,36 @@
+extends ../src/layout/main/main.pug
+
+block content
+  .home
+    aside.home__dialogs
+      .home__dialogs-header
+        a(href="./profile.pug")
+          button.button.button_small Настройки профиля
+      ul.home__dialogs-wrapper
+        li.home__dialogs-item
+          .home__dialogs-img-wrapper
+            img(src="https://via.placeholder.com/400x400", alt="profile_img").img-inner
+          .home__dialogs-info_wrapper 
+            p.home__dialogs-info Имя 
+            p.home__dialogs-info Сообщение 
+          .home__dialogs-item-more-wrapper
+            time.home__dialogs-item-time 10:29
+            .home__dialogs-item-count 10
+    .home__chat
+      .home__chat-header
+        .home__dialogs-img-wrapper
+          img(src="https://via.placeholder.com/400x400", alt="profile_img").img-inner
+        h4.home__chat-header-name Имя
+      .home__chat-board
+        div.home__chat-board-wrapper
+          p.home__chat-board-time 13.01.2022
+          .message Привет
+            time.message__time 0:33
+          .message.message_right Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci deleniti commodi consequuntur at totam ex dignissimos architecto enim iure, nisi vel exercitationem inventore nihil repellendus tempore autem laudantium fugiat. Quam?
+            time.message__time 0:33
+          .message.message_right Привет
+            time.message__time 0:33
+      .home__chat-panel
+        input(type="text", name="message", placeholder="Сообщение").home__chat-panel-input
+        button.button.button_small Отправить
+      //- span.home__chat-none Выберите чат чтобы отправить сообщение

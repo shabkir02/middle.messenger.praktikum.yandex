@@ -1,0 +1,24 @@
+extends ../src/layout/main/main.pug
+
+block content 
+  div.profile
+    div.form
+      label(for="imagefile").form__profile-img-wrapper
+        //- img(src="https://via.placeholder.com/50x50", alt="profile_image").form__profile-img
+        img(src="/static/icons/add_img.svg", alt="placeholder")
+      input(type="file", accept=".png, .jpg, .jpeg, .svg")#imagefile.hidden
+      h2.form__title Имя 
+      form
+        fieldset.form__fieldset
+          input(name="first_name", placeholder="Имя", type="text").form__input
+          input(name="second_name", placeholder="Фамилия", type="text").form__input
+        fieldset.form__fieldset
+          input(name="display_name", placeholder="Имя в чате", type="text").form__input
+          input(name="login", placeholder="Логин", type="text").form__input
+        fieldset.form__fieldset 
+          input(name="email", placeholder="Пароль", type="email").form__input
+          input(name="phone", placeholder="Номер телефона", type="phone").form__input
+        input(name="oldPassword", placeholder="Старый пароль", type="password").form__input
+        input(name="newPassword", placeholder="Новый пароль", type="password").form__input
+        button.button Изменить
+    
